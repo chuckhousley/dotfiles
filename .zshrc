@@ -94,3 +94,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+function looper() {(
+  TRAPINT() {}
+  while sleep .5
+  do
+    echo \nrunning \"$@\"
+    eval $@
+  done
+)}
