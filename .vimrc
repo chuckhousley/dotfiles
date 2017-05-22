@@ -25,6 +25,8 @@ nmap <leader>w :w!<cr>
 command W w !sudo tee % > /dev/null
 
 " here's a stupid one
+" update oh no i've become dependent on it
+" it's so good
 inoremap jk <esc>
 
 
