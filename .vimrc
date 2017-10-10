@@ -28,6 +28,8 @@ command W w !sudo tee % > /dev/null
 " update oh no i've become dependent on it
 " it's so good
 inoremap jk <esc>
+" update, this one owns too
+inoremap kj <esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -66,9 +68,6 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch 
-
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw 
