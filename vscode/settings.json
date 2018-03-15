@@ -1,0 +1,49 @@
+{
+    "window.zoomLevel": 0,
+    "telemetry.enableTelemetry":false,
+    "telemetry.enableCrashReporter": false,
+    "python.linting.enabled": false,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "vim.statusBarColorControl": true,
+    "vim.insertModeKeyBindings": [
+      {
+          "before": ["j", "k"],
+          "after": ["<esc>"]
+      },
+      {
+          "before": ["k", "j"],
+          "after": ["<esc>"]
+      }
+    ],
+    "vim.leader": ",",
+    "vim.otherModesKeyBindingsNonRecursive": [{
+            "before":["<C-n>"],
+            "after":[],
+            "commands": [{
+                    "command": ":nohl",
+                    "args": []
+            }]
+        },
+        {
+            "before": ["leader", "w"],
+            "after": [],
+            "commands": [{
+                    "command": "workbench.action.files.save",
+                    "args": []
+            }]
+        },
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-w>": false
+    },
+    "workbench.iconTheme": "vs-seti",
+    "workbench.statusBar.feedback.visible": false
+}
