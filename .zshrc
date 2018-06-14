@@ -1,3 +1,6 @@
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux -2
+fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export TERM="xterm-256color"
@@ -38,3 +41,4 @@ function looper() {(
     eval $@
   done
 )}
+# If you come from bash you might have to change your $PATH.
