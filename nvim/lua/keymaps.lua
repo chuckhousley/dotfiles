@@ -21,13 +21,13 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- good escape
-vim.keymap.set({ 'n', 'v', 'i', 'c' }, '<C-g>', '<Esc>')
+vim.keymap.set({ 'n', 'v', 'o', 'i', 'c' }, '<C-g>', '<Esc>', { remap = true, nowait = true })
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('i', 'kj', '<Esc>')
 
 -- no H/L
-vim.keymap.set('n', 'H', '0')
-vim.keymap.set('n', 'L', 'g_')
+vim.keymap.set('n', 'H', '0', { remap = false })
+vim.keymap.set('n', 'L', 'g_', { remap = false })
 
 -- window split
 vim.keymap.set('n', '<leader>ws', '<C-w>s', { desc = 'Split window horizontally' })
