@@ -95,6 +95,8 @@ else
   export EDITOR='nvim'
 fi
 
+export PATH=/opt/homebrew/opt/ccache/libexec:$PATH
+
 # Path editing
 # Dedup path in case multiple source commands screw it up
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
