@@ -1,0 +1,2 @@
+! from a hn comment, condenses comments for better readability
+news.ycombinator.com##.comment:style(max-width: 70ch !important; overflow: hidden !important)
