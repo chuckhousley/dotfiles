@@ -108,7 +108,9 @@ return {
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = 'Search Help' })
       vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = 'Search Keymaps' })
-      vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = 'Search Select Telescope' })
+      vim.keymap.set('n', '<leader>ss', builtin.current_buffer_fuzzy_find, { desc = 'Search this buffer' })
+      vim.keymap.set('n', '<leader>st', builtin.builtin, { desc = 'Search Select Telescope' })
+      vim.keymap.set('n', '<leader>s/', builtin.live_grep, { desc = 'Search Project' })
       vim.keymap.set('n', '<leader>*', builtin.grep_string, { desc = 'Search for current symbol' })
       vim.keymap.set('n', '<leader>sq', builtin.diagnostics, { desc = 'Search Diagnostics' })
       vim.keymap.set('n', "<leader>'", builtin.resume, { desc = 'Resume last search' })
