@@ -51,7 +51,7 @@ return {
       require('mini.bracketed').setup()
       require('mini.bufremove').setup()
 
-      require('mini.sessions').setup()
+      require('mini.sessions').setup { autoread = true }
       require('mini.starter').setup()
     end,
   },
