@@ -118,7 +118,7 @@ return {
       vim.keymap.set('n', '<leader><leader>', builtin.find_files, { desc = 'Find files' })
       vim.keymap.set('n', '<leader>,', builtin.buffers, { desc = 'Switch buffers' })
       vim.keymap.set('n', '<leader>su', '<cmd>Telescope undo<cr>', { desc = 'Search undo history' })
-      vim.keymap.set('n', '<leader>sw', builtin.lsp_dynamic_workspace_symbols, { desc = 'Search LSP symbols' })
+      vim.keymap.set('n', '<leader>si', builtin.lsp_dynamic_workspace_symbols, { desc = 'Search LSP symbols' })
 
       -- It's also possible to pass additional configuration options.
       --  See `:help telescope.builtin.live_grep()` for information about particular keys
